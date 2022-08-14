@@ -9,7 +9,7 @@ sidebar:
     # Profile information
     name: Minjae Kim
     tagline: Master candidate of CSDL, POSTECH in Korea
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: profile_minjae.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: kmj0824@postech.ac.kr
@@ -52,9 +52,9 @@ career-profile:
       Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) in 2021 from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea. He is currently the M.S. candidate in electrical engineering in 2022 from Pohang University of Science and Technology(POSTECH), Pohang, South Korea. His current research interests include Electronic Design Automation Develop, ML, etc. 
       He is working with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr)
 education:
-    - degree: MSc in Computer Science
-      university: University of London
-      time: 2011 - 2012
+    - degree: M.Sc in Electrical Engineering
+      university: Pohang University of Science and Technology, Republic of Korea
+      time: Feb.2022 - present
       details: |
         Advisor: Prof. Seokhyeong Kang
     - degree: BSc in Electrical Engineering (Major) & Computer Science Engineering (Minor)
@@ -77,6 +77,11 @@ experiences:
       company: Brain Computer Interface Lab (BCI), UNIST in Korea
       details: |
         - Data analysis of realtime EEG with CNN (decoding silent speech BCI)
+    - role: Institute for Basic Science (IBS), UNIST in Korea
+      time: November.2018 - March.2019
+      company: Undergraduate Research Intern
+      details: |
+        - Data mining for Microglia cell migration with Python & Learning Imaris tool (Image processing)
 projects:
     title: Awards
 #    intro: >
@@ -120,13 +125,16 @@ skills:
         level: 90%
 
       - name: Python & Jupyter
-        level: 85%
+        level: 90%
 
       - name: Verilog
         level: 75%
 
       - name: MATLAB
         level: 70%
+
+      - name: Tensorflow & pyTorch
+        level: 40%
 
       - name: Linux
         level: 80%
@@ -137,8 +145,6 @@ skills:
       - name: EDA including Cadence Virtuoso, Pspice, LTspice, AutoCad
         level: 65%
 
-      - name: Tensorflow & pyTorch
-        level: 40%
 
 
 footer: >
