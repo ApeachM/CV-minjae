@@ -60,6 +60,27 @@ education:
     - degree: BSc in Electrical Engineering (Major) & Computer Science Engineering (Minor)
       university: UNIST (Ulsan National Institute of Science and Technology), Republic of Korea
       time: Mar.2017 - Feb.2022
+publications:
+  title: Publications
+  #    intro: |
+  #      You can list your publications in this section. Lorem ipsum dolor sit
+  #      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+  #      bibendum fringilla a eu lectus.
+  papers:
+    - title: "Open-Source 3D Global Placer with D2D Vertical Connections using Louvain Clustering and RePlAce"
+      link: "#"
+      authors: Minjae Kim, Dohun Kim, and S. Kang
+      conference: Korean Conference on Semiconductors (KCS), 2023
+
+    - title: "RL-Legalizer: Reinforcement Learning-based Cell Priority Optimization in Mixed-Height Standard Cell Legalization,"
+      link: "#"
+      authors: Sung-Yun Lee, Seonghyeon Park, Daeyeon Kim, Minjae Kim, T. P. Le and S. Kang
+      conference: "IEEE/ACM Design, Automation and Test in Europe Conference and Exhibition (DATE), 2023"
+
+#      - title: A syntax directed compiler for Algol 60
+#        link: "#"
+#        authors: Edgar T. Irons
+#        conference: "Comm. ACM 4 (1961), 51–55"
 experiences:
     - role: Hardware Develop Team Leader
       time: June.2020 - September.2021
@@ -94,28 +115,6 @@ projects:
 
       - title: Best Awards in Naver X Like Lion Hakaton
         tagline: "November.2018"
-
-publications:
-    title: Publications
-#    intro: |
-#      You can list your publications in this section. Lorem ipsum dolor sit
-#      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-#      bibendum fringilla a eu lectus.
-    papers:
-      - title: "Open-Source 3D Global Placer with D2D Vertical Connections using Louvain Clustering and RePlAce"
-        link: "#"
-        authors: Minjae Kim, Dohun Kim, and S. Kang
-        conference: Korean Conference on Semiconductors (KCS), 2023
-
-      - title: "RL-Legalizer: Reinforcement Learning-based Cell Priority Optimization in Mixed-Height Standard Cell Legalization,"
-        link: "#"
-        authors: Sung-Yun Lee, Seonghyeon Park, Daeyeon Kim, Minjae Kim, T. P. Le and S. Kang
-        conference: "IEEE/ACM Design, Automation and Test in Europe Conference and Exhibition (DATE), 2023"
-
-#      - title: A syntax directed compiler for Algol 60
-#        link: "#"
-#        authors: Edgar T. Irons
-#        conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
     title: Skills &amp; Proficiency
