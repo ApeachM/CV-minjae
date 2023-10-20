@@ -50,7 +50,7 @@ career-profile:
     title: Career Profile
     summary: |
       Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) in 2022 from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea. He is currently the M.S. candidate in electrical engineering in 2022 from Pohang University of Science and Technology(POSTECH), Pohang, South Korea. His current research interests include Electronic Design Automation Develop, ML, etc. 
-      He is working with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr)
+      He is working with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr). Currently he has visiting scholar program from 2023.06 to present at [ABK Group](https://vlsicad.ucsd.edu), UCSD (University of California, San Diego).
 education:
     - degree: M.Sc in Electrical Engineering
       university: Pohang University of Science and Technology, Republic of Korea
@@ -103,6 +103,12 @@ experiences:
       company: Institute for Basic Science (IBS), UNIST in Korea
       details: |
         - Data mining for Microglia cell migration with Python & Learning Imaris tool (Image processing)
+projects:
+    title: Projects
+    assignments:
+        - title: [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)
+          tagline: 2023.06-2023.12
+
 projects:
     title: Awards
 #    intro: >
