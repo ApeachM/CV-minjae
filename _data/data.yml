@@ -108,11 +108,11 @@ experiences:
       company: Institute for Basic Science (IBS), UNIST in Korea
       details: |
         - Data mining for Microglia cell migration with Python & Learning Imaris tool (Image processing)
-projects:
-    title: Projects
-    assignments:
-        - title: [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)
-          tagline: 2023.06-2023.12
+# projects:
+#     title: Projects
+#     assignments:
+#         - title: [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)
+#           tagline: 2023.06-2023.12
 
 projects:
     title: Awards
