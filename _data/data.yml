@@ -51,10 +51,13 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) in 2022 from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea. He is currently the M.S. candidate in electrical engineering in 2022 from Pohang University of Science and Technology(POSTECH), Pohang, South Korea. His current research interests include Electronic Design Automation Develop, ML, etc. 
+      Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) in 2022 from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea. 
+      
+      He is currently the M.S. candidate in electrical engineering in 2022 from Pohang University of Science and Technology(POSTECH), Pohang, South Korea. His current research interests include Electronic Design Automation Develop, ML, etc. 
       He is working with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr). 
       
       He has visiting scholar program from June.2023 to present at [ABK Group](https://vlsicad.ucsd.edu), [UCSD](https://ucsd.edu) (University of California, San Diego).
+
 education:
     - degree: M.Sc in Electrical Engineering
       university: Pohang University of Science and Technology, Republic of Korea
@@ -64,6 +67,7 @@ education:
     - degree: BSc in Electrical Engineering (Major) & Computer Science Engineering (Minor)
       university: UNIST (Ulsan National Institute of Science and Technology), Republic of Korea
       time: Mar.2017 - Feb.2022
+
 publications:
   title: Publications
   #    intro: |
@@ -88,7 +92,7 @@ publications:
 experiences:
     - role: Visiting Scholar
       time: June.2023 - present
-      company: UCSD (University of California, San Diego)
+      company: ABK Group, UCSD (University of California, San Diego)
       details: |
           - Contribution into [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project for 3D IC Desgin
     - role: Hardware Develop Team Leader
