@@ -12,10 +12,8 @@ sidebar:
     avatar: profile_minjae.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: kmj0824@postech.ac.kr
-    email: mik077@ucsd.edu
-    phone: +8210.5321.4255
-    phone: +1619.300.9239
+    email: kmj0824@postech.ac.kr || mik077@ucsd.edu
+    phone: +8210.5321.4255 || +1619.300.9239
     # timezone: America/Cancun Timezone
     # citizenship:
     # website: blog.webjeda.com #do not add http://
