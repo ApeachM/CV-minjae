@@ -138,16 +138,16 @@ skills:
 
     toolset:
       - name: C++ & C
-        level: 90%
+        level: 95%
 
       - name: Python & Jupyter
         level: 90%
 
       - name: Verilog
-        level: 75%
+        level: 70%
 
       - name: MATLAB
-        level: 70%
+        level: 65%
 
       - name: Tensorflow & pyTorch
         level: 40%
@@ -158,7 +158,7 @@ skills:
       - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
         level: 80%
 
-      - name: EDA including Cadence Virtuoso, Pspice, LTspice, AutoCad
+      - name: EDA including Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad
         level: 65%
 
 
