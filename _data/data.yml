@@ -137,23 +137,11 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: C++ & C
+      - name: C++ & C (with gdb)
         level: 95%
 
       - name: Python & Jupyter
         level: 90%
-
-      - name: Verilog
-        level: 70%
-
-      - name: MATLAB
-        level: 65%
-
-      - name: Tensorflow & pyTorch
-        level: 40%
-
-      - name: Linux
-        level: 80%
 
       - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
         level: 80%
@@ -163,6 +151,18 @@ skills:
 
       - name: Graphical User Interface (Qt5 with Python & C++)
         level: 75%        
+
+      - name: Verilog
+        level: 70%
+
+      - name: MATLAB
+        level: 65%
+
+      - name: Linux
+        level: 80%
+
+      - name: Tensorflow & pyTorch
+        level: 55%
 
       - name: EDA (Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad)
         level: 65%
