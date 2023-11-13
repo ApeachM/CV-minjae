@@ -158,7 +158,14 @@ skills:
       - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
         level: 80%
 
-      - name: EDA including Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad
+      - name: Peripheral (SPI, I2C, UART, GPIO)
+        level: 80%        
+
+      - name: Graphical User Interface (Qt5 with Python & C++)
+        level: 75%        
+
+      - name: EDA (Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad)
         level: 65%
+
 
 
