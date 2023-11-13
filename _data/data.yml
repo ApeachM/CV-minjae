@@ -142,6 +142,15 @@ skills:
 
       - name: Python & Jupyter
         level: 90%
+        
+      - name: Tensorflow & pyTorch
+        level: 70%
+
+      - name: Verilog
+        level: 70%
+
+      - name: MATLAB
+        level: 65%        
 
       - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
         level: 80%
@@ -152,17 +161,8 @@ skills:
       - name: Graphical User Interface (Qt5 with Python & C++)
         level: 75%        
 
-      - name: Verilog
-        level: 70%
-
-      - name: MATLAB
-        level: 65%
-
       - name: Linux
         level: 80%
-
-      - name: Tensorflow & pyTorch
-        level: 55%
 
       - name: EDA (Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad)
         level: 65%
