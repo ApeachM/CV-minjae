@@ -146,20 +146,20 @@ skills:
       - name: Verilog
         level: 55%
 
+      - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
+        level: 80%
+
+      - name: Peripheral (SPI, I2C, UART, GPIO)
+        level: 80%        
+
+      - name: Graphical User Interface (Qt5 with Python & C++)
+        level: 65%        
+
       - name: MATLAB
         level: 50%        
 
       - name: Tensorflow & pyTorch
         level: 60%
-
-      - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
-        level: 75%
-
-      - name: Peripheral (SPI, I2C, UART, GPIO)
-        level: 70%        
-
-      - name: Graphical User Interface (Qt5 with Python & C++)
-        level: 65%        
 
       - name: EDA (Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad)
         level: 40%
