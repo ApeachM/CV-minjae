@@ -3,68 +3,68 @@
 #
 
 sidebar:
-    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
 
-    # Profile information
-    name: Minjae Kim
-    tagline: Master candidate of CSDL, POSTECH in Korea
-    avatar: profile_minjae.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  # Profile information
+  name: Minjae Kim
+  tagline: Master candidate of CSDL, POSTECH in Korea
+  avatar: profile_minjae.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
-    # Sidebar links
-    email: kmj0824@postech.ac.kr, mik077@ucsd.edu
-    phone: (+82) 10.5321.4255, (+1) 619.300.9239
-    # timezone: America/Cancun Timezone
-    # citizenship:
-    # website: blog.webjeda.com #do not add http://
-    # linkedin: alandoe
-    # xing: alandoe
-    github: ApeachM
-    # telegram: # add your nickname without '@' sign
-    # gitlab:
-    # bitbucket:
-    # twitter: '@webjeda'
-    # stack-overflow: # Number/Username, e.g. 123456/alandoe
-    # codewars:
-    # goodreads: # Number-Username, e.g. 123456-alandoe
-    # pdf: http://www.africau.edu/images/default/sample.pdf
+  # Sidebar links
+  email: kmj0824@postech.ac.kr, mik077@ucsd.edu
+  phone: (+82) 10.5321.4255, (+1) 619.300.9239
+  # timezone: America/Cancun Timezone
+  # citizenship:
+  # website: blog.webjeda.com #do not add http://
+  # linkedin: alandoe
+  # xing: alandoe
+  github: ApeachM
+  # telegram: # add your nickname without '@' sign
+  # gitlab:
+  # bitbucket:
+  # twitter: '@webjeda'
+  # stack-overflow: # Number/Username, e.g. 123456/alandoe
+  # codewars:
+  # goodreads: # Number-Username, e.g. 123456-alandoe
+  # pdf: http://www.africau.edu/images/default/sample.pdf
 
-    languages:
-      - idiom: Korean
-        level: Native
+  languages:
+    - idiom: Korean
+      level: Native
 
-      - idiom: English
-        level: Advanced
+    - idiom: English
+      level: Advanced
 
-    interests:
-      - item: Electrical Design Automation
-        link:
+  interests:
+    - item: Electrical Design Automation
+      link:
 
-      - item: Deep Learning Hardware
-        link:
+    - item: Deep Learning Hardware
+      link:
 
-      - item: Machine Learning
-        link:
+    - item: Machine Learning
+      link:
 
 career-profile:
-    title: Career Profile
-    summary: |
-      Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) in 2022 from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea. 
-      
-      He is currently the M.S. candidate in electrical engineering in 2022 from Pohang University of Science and Technology(POSTECH), Pohang, South Korea. His current research interests include Electronic Design Automation Develop, ML, etc. 
-      He is working with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr). 
-      
-      He has visiting scholar program from June.2023 to present at [ABK Group](https://vlsicad.ucsd.edu), [UCSD](https://ucsd.edu) (University of California, San Diego).
+  title: Career Profile
+  summary: |
+    Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) in 2022 from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea. 
+    
+    He is currently the M.S. candidate in electrical engineering in 2022 from Pohang University of Science and Technology(POSTECH), Pohang, South Korea. His current research interests include Electronic Design Automation Develop, ML, etc. 
+    He is working with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr). 
+    
+    He has visiting scholar program from June.2023 to present at [ABK Group](https://vlsicad.ucsd.edu), [UCSD](https://ucsd.edu) (University of California, San Diego).
 
 education:
-    - degree: M.Sc in Electrical Engineering
-      university: Pohang University of Science and Technology, Republic of Korea
-      time: Feb.2022 - present
-      details: |
-        Advisor: Prof. Seokhyeong Kang
-    - degree: BSc in Electrical Engineering (Major) & Computer Science Engineering (Minor)
-      university: UNIST (Ulsan National Institute of Science and Technology), Republic of Korea
-      time: Mar.2017 - Feb.2022
+  - degree: M.Sc in Electrical Engineering
+    university: Pohang University of Science and Technology, Republic of Korea
+    time: Feb.2022 - present
+    details: |
+      Advisor: Prof. Seokhyeong Kang
+  - degree: BSc in Electrical Engineering (Major) & Computer Science Engineering (Minor)
+    university: UNIST (Ulsan National Institute of Science and Technology), Republic of Korea
+    time: Mar.2017 - Feb.2022
 
 publications:
   title: Publications
@@ -88,32 +88,32 @@ publications:
 #        authors: Edgar T. Irons
 #        conference: "Comm. ACM 4 (1961), 51–55"
 experiences:
-    - role: Visiting Scholar
-      time: June.2023 - present
-      company: ABK Group, UCSD (University of California, San Diego)
-      details: |
-          - Contribute into [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project for 3D IC Desgin
-    - role: Hardware Develop Team Leader
-      time: June.2020 - September.2021
-      company: Startup Do:main, Gang-Nam in Korea
-      details: |
-        - Develop Medical Equipment (EEG) hardware
-    - role: Undergraduate Research Intern
-      time: June.2019 - December.2019
-      company: Bio-inspired Advanced Sensors Lab (BIAS), UNIST in Korea
-      details: |
-        - Learning Cadence Virtuoso & verification of Analog Circuit Division
-        - Implementation of DAC chip protocol with Verilog &  UI making for ADC application
-    - role: Undergraduate Research Intern
-      time: February.2019 - August.2019
-      company: Brain Computer Interface Lab (BCI), UNIST in Korea
-      details: |
-        - Data analysis of realtime EEG with CNN (decoding silent speech BCI)
-    - role: Undergraduate Research Intern
-      time: November.2018 - March.2019
-      company: Institute for Basic Science (IBS), UNIST in Korea
-      details: |
-        - Data mining for Microglia cell migration with Python & Learning Imaris tool (Image processing)
+  - role: Visiting Scholar
+    time: June.2023 - present
+    company: ABK Group, UCSD (University of California, San Diego)
+    details: |
+      - Contribute into [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project for 3D IC Desgin
+  - role: Hardware Develop Team Leader
+    time: June.2020 - September.2021
+    company: Startup Do:main, Gang-Nam in Korea
+    details: |
+      - Develop Medical Equipment (EEG) hardware
+  - role: Undergraduate Research Intern
+    time: June.2019 - December.2019
+    company: Bio-inspired Advanced Sensors Lab (BIAS), UNIST in Korea
+    details: |
+      - Learning Cadence Virtuoso & verification of Analog Circuit Division
+      - Implementation of DAC chip protocol with Verilog &  UI making for ADC application
+  - role: Undergraduate Research Intern
+    time: February.2019 - August.2019
+    company: Brain Computer Interface Lab (BCI), UNIST in Korea
+    details: |
+      - Data analysis of realtime EEG with CNN (decoding silent speech BCI)
+  - role: Undergraduate Research Intern
+    time: November.2018 - March.2019
+    company: Institute for Basic Science (IBS), UNIST in Korea
+    details: |
+      - Data mining for Microglia cell migration with Python & Learning Imaris tool (Image processing)
 # projects:
 #     title: Projects
 #     assignments:
@@ -121,51 +121,51 @@ experiences:
 #           tagline: 2023.06-2023.12
 
 projects:
-    title: Awards
-#    intro: >
-#      You can list your side projects or open source libraries in this
-#      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-#      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-    assignments:
-      - title: POSTECH Fellowship
-        tagline: "May.2022"
+  title: Awards
+  #    intro: >
+  #      You can list your side projects or open source libraries in this
+  #      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  assignments:
+    - title: POSTECH Fellowship
+      tagline: "May.2022"
 
-      - title: Best Awards in Naver X Like Lion Hakaton
-        tagline: "November.2018"
+    - title: Best Awards in Naver X Like Lion Hakaton
+      tagline: "November.2018"
 
 skills:
-    title: Skills &amp; Proficiency
+  title: Skills &amp; Proficiency
 
-    toolset:
-      - name: C++ & C (with gdb)
-        level: 95%
+  toolset:
+    - name: C++ & C (with gdb)
+      level: 95%
 
-      - name: Python & Jupyter
-        level: 90%
-        
-      - name: Verilog
-        level: 55%
+    - name: Python & Jupyter
+      level: 90%
 
-      - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
-        level: 80%
+    - name: Verilog
+      level: 55%
 
-      - name: Peripheral (SPI, I2C, UART, GPIO)
-        level: 80%        
+    - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
+      level: 80%
 
-      - name: Graphical User Interface (Qt5 with Python & C++)
-        level: 65%        
+    - name: Peripheral (SPI, I2C, UART, GPIO)
+      level: 80%
 
-      - name: MATLAB
-        level: 50%        
+    - name: Graphical User Interface (Qt5 with Python & C++)
+      level: 65%
 
-      - name: Tensorflow & pyTorch
-        level: 60%
+    - name: MATLAB
+      level: 50%
 
-      - name: EDA (Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad)
-        level: 40%
+    - name: Tensorflow & pyTorch
+      level: 60%
 
-      - name: Linux
-        level: 80%
+    - name: EDA (Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad)
+      level: 40%
+
+    - name: Linux
+      level: 80%
 
 
 
