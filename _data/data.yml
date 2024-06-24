@@ -8,7 +8,7 @@ sidebar:
 
   # Profile information
   name: Minjae Kim
-  tagline: Master candidate of CSDL, POSTECH in Korea
+  tagline: Engineer at BAUM Design Systems, Korea
   avatar: profile_minjae.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -49,17 +49,19 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) in 2022 from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea. 
+    Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea in 2022. 
     
     He is currently the M.S. candidate in electrical engineering in 2022 from Pohang University of Science and Technology(POSTECH), Pohang, South Korea. His current research interests include Electronic Design Automation Develop, ML, etc. 
     He is working with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr). 
     
-    He has visiting scholar program from June.2023 to present at [ABK Group](https://vlsicad.ucsd.edu), [UCSD](https://ucsd.edu) (University of California, San Diego).
+    He has visiting scholar program from June.2023 to Dec.2023 at [ABK Group](https://vlsicad.ucsd.edu), [UCSD](https://ucsd.edu) (University of California, San Diego).
+    
+    Minjae is currently working as an engineer at [BAUM Design Systems](https://www.baum-ds.com), Korea.
 
 education:
   - degree: M.Sc in Electrical Engineering
     university: Pohang University of Science and Technology, Republic of Korea
-    time: Feb.2022 - present
+    time: Feb.2022 - Feb.2024
     details: |
       Advisor: Prof. Seokhyeong Kang
   - degree: BSc in Electrical Engineering (Major) & Computer Science Engineering (Minor)
@@ -68,64 +70,55 @@ education:
 
 publications:
   title: Publications
-  #    intro: |
-  #      You can list your publications in this section. Lorem ipsum dolor sit
-  #      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-  #      bibendum fringilla a eu lectus.
   papers:
     - title: "Open-Source 3D Global Placer with D2D Vertical Connections using Louvain Clustering and RePlAce"
-      # link: "#"
       authors: Minjae Kim, Dohun Kim, and S. Kang
       conference: Korean Conference on Semiconductors (KCS), 2023
 
     - title: "RL-Legalizer: Reinforcement Learning-based Cell Priority Optimization in Mixed-Height Standard Cell Legalization,"
-      # link: "#"
       authors: Sung-Yun Lee, Seonghyeon Park, Daeyeon Kim, Minjae Kim, T. P. Le and S. Kang
       conference: "IEEE/ACM Design, Automation and Test in Europe Conference and Exhibition (DATE), 2023"
 
-#      - title: A syntax directed compiler for Algol 60
-#        link: "#"
-#        authors: Edgar T. Irons
-#        conference: "Comm. ACM 4 (1961), 51–55"
 experiences:
+  - role: Engineer
+    time: Feb.2024 - present
+    company: BAUM Design Systems, Korea
+    details: |
+      - Specializing in design and development of EDA tools.
+
   - role: Visiting Scholar
-    time: June.2023 - present
+    time: June.2023 - Feb.2024
     company: ABK Group, UCSD (University of California, San Diego)
     details: |
-      - Contribute into [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project for 3D IC Desgin
+      - Contribute into [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project for 3D IC Design
+
   - role: Hardware Develop Team Leader
     time: June.2020 - September.2021
     company: Startup Do:main, Gang-Nam in Korea
     details: |
-      - Develop Medical Equipment (EEG) hardware
+      - Developed Medical Equipment (EEG) hardware.
+
   - role: Undergraduate Research Intern
     time: June.2019 - December.2019
     company: Bio-inspired Advanced Sensors Lab (BIAS), UNIST in Korea
     details: |
       - Learning Cadence Virtuoso & verification of Analog Circuit Division
       - Implementation of DAC chip protocol with Verilog &  UI making for ADC application
+
   - role: Undergraduate Research Intern
     time: February.2019 - August.2019
     company: Brain Computer Interface Lab (BCI), UNIST in Korea
     details: |
-      - Data analysis of realtime EEG with CNN (decoding silent speech BCI)
+      - Analyzed realtime EEG data with CNN.
+
   - role: Undergraduate Research Intern
     time: November.2018 - March.2019
     company: Institute for Basic Science (IBS), UNIST in Korea
     details: |
-      - Data mining for Microglia cell migration with Python & Learning Imaris tool (Image processing)
-# projects:
-#     title: Projects
-#     assignments:
-#         - title: [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)
-#           tagline: 2023.06-2023.12
+      - Mined data for Microglia cell migration.
 
 projects:
   title: Awards
-  #    intro: >
-  #      You can list your side projects or open source libraries in this
-  #      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  #      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
   assignments:
     - title: POSTECH Fellowship
       tagline: "May.2022"
@@ -137,28 +130,28 @@ skills:
   title: Skills &amp; Proficiency
 
   toolset:
-    - name: C++ & C (with gdb)
+    - name: C++ & C (with gdb, gtest, perf, valgrind)
       level: 95%
 
     - name: Python & Jupyter
       level: 90%
 
     - name: Verilog
-      level: 55%
+      level: 50%
 
-    - name: Embeded (MCU, FPGA, RaspberryPi, JetsonNano)
+    - name: Embedded (MCU, FPGA, RaspberryPi, JetsonNano)
       level: 80%
 
     - name: Peripheral (SPI, I2C, UART, GPIO)
       level: 80%
 
     - name: Graphical User Interface (Qt5 with Python & C++)
-      level: 65%
+      level: 80%
 
     - name: MATLAB
       level: 50%
 
-    - name: Tensorflow & pyTorch
+    - name: Tensorflow & PyTorch
       level: 60%
 
     - name: EDA (Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad)
