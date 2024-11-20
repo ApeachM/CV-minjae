@@ -71,6 +71,10 @@ education:
 publications:
   title: Publications
   papers:
+    - title: "TA3D: Timing-Aware 3D IC Partitioning and Placement by Optimizing the Critical Path"
+      authors: Dongyu Kim, Minjae Kim, Junseok Hur, Jakang Lee, Jinoh Cho, and S. Kang
+      conference: "6th ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD), 2024."
+
     - title: "Open-Source 3D Global Placer with D2D Vertical Connections using Louvain Clustering and RePlAce"
       authors: Minjae Kim, Dohun Kim, and S. Kang
       conference: Korean Conference on Semiconductors (KCS), 2023
