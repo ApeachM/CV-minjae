@@ -30,6 +30,8 @@ sidebar:
   # pdf: http://www.africau.edu/images/default/sample.pdf
 
   languages:
+    title: Languages
+    info:
     - idiom: Korean
       level: Native
 
@@ -37,6 +39,8 @@ sidebar:
       level: Advanced
 
   interests:
+    title: Interests
+    info:
     - item: Electronic Design Automation
       link:
 
@@ -59,6 +63,8 @@ career-profile:
     He is currently working as an engineer at [BAUM Design Systems](https://www.baum-ds.com), specializing in design and development of EDA tools.
 
 education:
+  title: Education
+  info:
   - degree: M.Sc in Electrical Engineering
     university: Pohang University of Science and Technology, Republic of Korea
     time: Feb.2022 - Feb.2024
@@ -84,6 +90,8 @@ publications:
       conference: "IEEE/ACM Design, Automation and Test in Europe Conference and Exhibition (DATE), 2023"
 
 experiences:
+  title: Experiences
+  info:
   - role: Engineer
     time: Feb.2024 - present
     company: BAUM Design Systems, Korea
