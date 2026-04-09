@@ -8,12 +8,12 @@ sidebar:
 
   # Profile information
   name: Minjae Kim
-  tagline: Engineer at BAUM Design Systems, Korea
+  tagline: EDA Tool Developer
   avatar: profile_minjae.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: develop.minjae@gmail.com kmj0824@postech.ac.kr, kmj0824@unist.ac.kr, mik077@ucsd.edu
-  phone: (+82) 10.5321.4255, (+1) 619.300.9239
+  email: develop.minjae@gmail.com
+  # phone:
   # timezone: America/Cancun Timezone
   # citizenship:
   # website: blog.webjeda.com #do not add http://
@@ -37,10 +37,13 @@ sidebar:
       level: Advanced
 
   interests:
-    - item: Electrical Design Automation
+    - item: Electronic Design Automation
       link:
 
-    - item: Deep Learning Hardware
+    - item: CI/CD & Build Infrastructure
+      link:
+
+    - item: Embedded Systems & Hardware Design
       link:
 
     - item: Machine Learning
@@ -49,14 +52,11 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea in 2022. 
-    
-    He is currently the M.S. candidate in electrical engineering in 2022 from Pohang University of Science and Technology(POSTECH), Pohang, South Korea. His current research interests include Electronic Design Automation Develop, ML, etc. 
-    He is working with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr). 
-    
-    He has visiting scholar program from June.2023 to Dec.2023 at [ABK Group](https://vlsicad.ucsd.edu), [UCSD](https://ucsd.edu) (University of California, San Diego).
-    
-    Minjae is currently working as an engineer at [BAUM Design Systems](https://www.baum-ds.com), Korea.
+    Minjae Kim received the B.S. degree in Electrical Engineering (Major) and Computer Science Engineering (Minor) from Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea in 2022, and the M.S. degree in Electrical Engineering from Pohang University of Science and Technology (POSTECH), Pohang, South Korea in 2024. His research was conducted with Prof. Seokhyeong Kang in [CAD & SoC Design Lab.](http://csdl.postech.ac.kr).
+
+    During his M.S. program, he was a visiting scholar at the [ABK Group](https://vlsicad.ucsd.edu), [UCSD](https://ucsd.edu) (University of California, San Diego) from June 2023 to February 2024, contributing to the [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project for 3D IC placement and routing.
+
+    He is currently working as an engineer at [BAUM Design Systems](https://www.baum-ds.com), specializing in design and development of EDA tools.
 
 education:
   - degree: M.Sc in Electrical Engineering
@@ -94,20 +94,20 @@ experiences:
     time: June.2023 - Feb.2024
     company: ABK Group, UCSD (University of California, San Diego)
     details: |
-      - Contribute into [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project for 3D IC Design
+      - Contributed to the [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project for 3D IC placement and routing.
 
   - role: Hardware Develop Team Leader
     time: June.2020 - September.2021
     company: Startup Do:main, Gang-Nam in Korea
     details: |
-      - Developed Medical Equipment (EEG) hardware.
+      - Developed medical EEG equipment: full-cycle hardware from circuit design (ADS1299) through PCB fabrication to firmware development.
 
   - role: Undergraduate Research Intern
     time: June.2019 - December.2019
     company: Bio-inspired Advanced Sensors Lab (BIAS), UNIST in Korea
     details: |
-      - Learning Cadence Virtuoso & verification of Analog Circuit Division
-      - Implementation of DAC chip protocol with Verilog &  UI making for ADC application
+      - Cadence Virtuoso analog circuit design & verification.
+      - Implementation of DAC chip protocol with Verilog & UI for ADC application.
 
   - role: Undergraduate Research Intern
     time: February.2019 - August.2019
@@ -119,7 +119,7 @@ experiences:
     time: November.2018 - March.2019
     company: Institute for Basic Science (IBS), UNIST in Korea
     details: |
-      - Mined data for Microglia cell migration.
+      - Data mining for Microglia cell migration.
 
 projects:
   title: Awards
@@ -127,42 +127,45 @@ projects:
     - title: POSTECH Fellowship
       tagline: "May.2022"
 
-    - title: Best Awards in Naver X Like Lion Hakaton
+    - title: Best Award in Naver X Like Lion Hackathon
       tagline: "November.2018"
 
 skills:
   title: Skills &amp; Proficiency
 
   toolset:
-    - name: C++ & C (with gdb, gtest, perf, valgrind)
+    - name: C++ & C (GCC, gdb, GTest, Valgrind, Intel VTune, clang-tidy)
       level: 95%
 
-    - name: Python & Jupyter
+    - name: Python (PyTorch, PyQt6, automation)
       level: 90%
+
+    - name: CI/CD (Jenkins, CTest, JUnit/Allure, Docker, multi-OS matrix build)
+      level: 90%
+
+    - name: Build System (CMake, CPack, CTest, multi-OS packaging pipeline)
+      level: 90%
+
+    - name: Embedded (STM32, FPGA, ESP32, Arduino, RaspberryPi)
+      level: 80%
+
+    - name: HW Design (OrCAD, PSpice, LTspice, Virtuoso, PCB design & fabrication)
+      level: 75%
+
+    - name: Peripheral & Protocol (SPI, I2C, UART, GPIO)
+      level: 80%
+
+    - name: Tcl
+      level: 70%
 
     - name: Verilog
       level: 50%
 
-    - name: Embedded (MCU, FPGA, RaspberryPi, JetsonNano)
+    - name: EDA (Cadence Innovus, Yosys, OpenROAD)
+      level: 70%
+
+    - name: Linux System Administration (RHEL, CentOS, Ubuntu, node operation)
       level: 80%
 
-    - name: Peripheral (SPI, I2C, UART, GPIO)
-      level: 80%
-
-    - name: Graphical User Interface (Qt5 with Python & C++)
-      level: 80%
-
-    - name: MATLAB
-      level: 50%
-
-    - name: Tensorflow & PyTorch
+    - name: LLM Infrastructure (vLLM, on-premise serving, DGX Spark)
       level: 60%
-
-    - name: EDA (Cadence Innovus, Virtuoso, Pspice, LTspice, AutoCad)
-      level: 40%
-
-    - name: Linux
-      level: 80%
-
-
-
