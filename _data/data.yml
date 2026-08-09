@@ -19,7 +19,7 @@ sidebar:
   # website: blog.webjeda.com #do not add http://
   # linkedin: alandoe
   # xing: alandoe
-  github: ApeachM
+  github: dev-minjae
   # telegram: # add your nickname without '@' sign
   # gitlab:
   # bitbucket:
@@ -60,7 +60,7 @@ career-profile:
 
     During his M.S. program, he was a visiting scholar at the [ABK Group](https://vlsicad.ucsd.edu), [UCSD](https://ucsd.edu) (University of California, San Diego) from June 2023 to February 2024, contributing to the open-source EDA platform [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) — implementing routing utilization estimation (RUDY) and prototyping a 3D IC multi-die manager.
 
-    He is currently working as an engineer at [BAUM Design Systems](https://www.baum-ds.com), specializing in design and development of EDA tools.
+    He is currently an R&D Team Leader at [BAUM Design Systems](https://www.baum-ds.com), specializing in design and development of EDA tools. He continues to contribute to OpenROAD as [dev-minjae](https://github.com/dev-minjae) — most recently a Kokkos-based GPU acceleration of the global placer, achieving a 6x speedup while remaining bit-identical to the CPU path when GPU is disabled.
 
 education:
   title: Education
@@ -90,13 +90,32 @@ publications:
       conference: "IEEE/ACM Design, Automation and Test in Europe Conference and Exhibition (DATE), 2023"
 
 experiences:
-  title: Experiences
+  title: Experience
   info:
-  - role: Engineer
-    time: Feb.2024 - present
+  - role: R&D Team Leader
+    time: July.2026 - present
     company: BAUM Design Systems, Korea
     details: |
-      - Specializing in design and development of EDA tools.
+      - Leading the R&D team for commercial EDA tool development.
+
+  - role: Engineer
+    time: Feb.2024 - July.2026
+    company: BAUM Design Systems, Korea
+    details: |
+      - Developed core components of the power model generation flow.
+      - Replaced a commercial SystemVerilog frontend with an open-source based parsing layer, enabling license-clean builds without stub code.
+      - Implemented an RTL-to-gate elaborator to supply gate synthesis functionality absent from the open-source frontend.
+      - Implemented a native Liberty parser (lexer / parser / AST), validated by parity comparison against the legacy backend over an expanded test corpus.
+      - Led development of a sequential equivalence checker (sequential miter, ABC proof engine, counterexample re-validation) that certifies clock-gating insertion, retiming, and register merging as behavior-preserving, with a three-state PASS / FAIL / INCONCLUSIVE verdict.
+      - Built and owned the multi-OS packaging and release pipeline (RHEL / AlmaLinux / CentOS) and the regression, nightly, and code-quality CI infrastructure.
+      - Developed an MCP server exposing the toolchain to LLM agents, with an evaluation harness for regression tracking.
+
+  - role: Open-Source Contributor
+    time: Feb.2024 - present
+    company: OpenROAD Project (github.com/dev-minjae)
+    details: |
+      - GPU acceleration of the Nesterov-based global placer using Kokkos (54 files, ~8.6K lines): 6x speedup on an RTX 5090, with the CPU path left bit-identical when GPU support is disabled.
+      - Contributed agent skills (fix-bug / add-test / review-pr) to the project's development workflow.
 
   - role: Visiting Scholar
     time: June.2023 - Feb.2024
@@ -140,7 +159,7 @@ projects:
       tagline: "November.2018"
 
 skills:
-  title: Skills &amp; Proficiency
+  title: Skills
 
   toolset:
     - name: C++ & C (GCC, gdb, GTest, Valgrind, Intel VTune, clang-tidy)
@@ -149,10 +168,13 @@ skills:
     - name: Python (PyTorch, PyQt6, automation)
       level: 90%
 
+    - name: CUDA & GPU Computing (Kokkos, Nsight, CPU/GPU parity verification)
+      level: 75%
+
     - name: CI/CD (Jenkins, CTest, JUnit/Allure, Docker, multi-OS matrix build)
       level: 90%
 
-    - name: Build System (CMake, CPack, CTest, multi-OS packaging pipeline)
+    - name: Build System (CMake, CPack, CTest, Bazel, multi-OS packaging pipeline)
       level: 90%
 
     - name: Embedded (STM32, FPGA, ESP32, Arduino, RaspberryPi)

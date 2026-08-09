@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% assign d = site.data.data %}
+<title>{{ d.sidebar.name }} — {{ d.sidebar.tagline }}</title>
+<meta name="description" content="{{ d.sidebar.name }}, {{ d.sidebar.tagline }}.">
+<meta name="author" content="{{ d.sidebar.name }}">
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+
+<main class="cv">
+
+  <header class="masthead">
+    <h1>{{ d.sidebar.name }}</h1>
+    <p class="tagline">{{ d.sidebar.tagline }}</p>
+    <p class="contacts">
+      {% if d.sidebar.email %}<a href="mailto:{{ d.sidebar.email }}">{{ d.sidebar.email }}</a>{% endif %}
+      {% if d.sidebar.github %}<a href="https://github.com/{{ d.sidebar.github }}">github.com/{{ d.sidebar.github }}</a>{% endif %}
+      {% if d.sidebar.linkedin %}<a href="https://www.linkedin.com/in/{{ d.sidebar.linkedin }}">linkedin.com/in/{{ d.sidebar.linkedin }}</a>{% endif %}
+      {% if d.sidebar.website %}<a href="https://{{ d.sidebar.website }}">{{ d.sidebar.website }}</a>{% endif %}
+    </p>
+  </header>
+
+  {% assign profile = d["career-profile"] %}
+  {% if profile.summary %}
+  <section>
+    <h2>{{ profile.title | default: "Profile" }}</h2>
+    <div class="prose">{{ profile.summary | markdownify }}</div>
+  </section>
+  {% endif %}
+
+  {% if d.experiences.info %}
+  <section>
+    <h2>{{ d.experiences.title | default: "Experience" }}</h2>
+    {% for job in d.experiences.info %}
+    <article class="entry">
+      <div class="entry-head">
+        <h3>{{ job.role }}</h3>
+        <span class="when">{{ job.time }}</span>
+      </div>
+      <p class="where">{{ job.company }}</p>
+      {% if job.details %}<div class="prose">{{ job.details | markdownify }}</div>{% endif %}
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if d.education.info %}
+  <section>
+    <h2>{{ d.education.title | default: "Education" }}</h2>
+    {% for edu in d.education.info %}
+    <article class="entry">
+      <div class="entry-head">
+        <h3>{{ edu.degree }}</h3>
+        <span class="when">{{ edu.time }}</span>
+      </div>
+      <p class="where">{{ edu.university }}</p>
+      {% if edu.details %}<div class="prose">{{ edu.details | markdownify }}</div>{% endif %}
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if d.publications.papers %}
+  <section>
+    <h2>{{ d.publications.title | default: "Publications" }}</h2>
+    <ol class="papers">
+      {% for p in d.publications.papers %}
+      <li>
+        <span class="paper-title">{% if p.link %}<a href="{{ p.link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</span>
+        <span class="paper-authors">{{ p.authors }}</span>
+        <span class="paper-venue">{{ p.conference }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if d.projects.assignments %}
+  <section>
+    <h2>{{ d.projects.title | default: "Awards" }}</h2>
+    <ul class="compact">
+      {% for a in d.projects.assignments %}
+      <li>
+        <span>{% if a.link %}<a href="{{ a.link }}">{{ a.title }}</a>{% else %}{{ a.title }}{% endif %}</span>
+        <span class="when">{{ a.tagline }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if d.skills.toolset %}
+  <section>
+    <h2>{{ d.skills.title | default: "Skills" }}</h2>
+    <ul class="skills">
+      {% for s in d.skills.toolset %}
+      <li>
+        <span class="skill-name">{{ s.name }}</span>
+        {% if s.level %}<span class="meter"><span class="meter-fill" style="width:{{ s.level }}"></span></span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if d.sidebar.languages.info or d.sidebar.interests.info %}
+  <section class="twoup">
+    {% if d.sidebar.languages.info %}
+    <div>
+      <h2>{{ d.sidebar.languages.title | default: "Languages" }}</h2>
+      <ul class="compact">
+        {% for l in d.sidebar.languages.info %}
+        <li><span>{{ l.idiom }}</span><span class="when">{{ l.level }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if d.sidebar.interests.info %}
+    <div>
+      <h2>{{ d.sidebar.interests.title | default: "Interests" }}</h2>
+      <ul class="compact">
+        {% for i in d.sidebar.interests.info %}
+        <li><span>{% if i.link %}<a href="{{ i.link }}">{{ i.item }}</a>{% else %}{{ i.item }}{% endif %}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
+</main>
+
+</body>
+</html>

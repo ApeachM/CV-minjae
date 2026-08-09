@@ -1,90 +1,47 @@
-<a href="https://jekyll-themes.com">
-<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+# CV — Minjae Kim
 
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
-> Visit [her website](http://themes.3rdwavemedia.com/) for more themes.
+Source for <https://dev-minjae.github.io/CV-minjae/>.
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+## Editing
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
-    </td>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
-    </td>
-  </tr>
-</table>
+All content lives in **`_data/data.yml`**. That is the only file to edit for
+content changes — nothing is hard-coded in the templates.
 
-## Installation
+```
+_data/data.yml          content (the single source of truth)
+_layouts/resume.html    page structure
+assets/css/main.scss    styles
+_config.yml             site settings
+```
 
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository;
-* Go to settings and set master branch as Github Pages source;
-* Your new site should be ready at `https://<username>.github.io/online-cv/`;
-* Printable version of the site can be found at `https://<username>.github.io/online-cv/print`. Use a third party link https://pdflayer.com/, https://www.web2pdfconvert.com/ etc to get the printable PDF.
-
-Change all the details from one place: `_data/data.yml`.
-
-### To preview/edit locally with docker
+## Local preview
 
 ```sh
-docker-compose up
+docker compose up -d          # http://localhost:4000/CV-minjae/
+docker compose down
 ```
 
-*docker-compose.yml* file is used to create a container that is reachable under <http://localhost:4000>.
-Changes *_data/data.yml* will be visible after a while.
+Jekyll runs with `--watch --livereload`, so edits to `_data/data.yml` reload the
+browser automatically. Changes to `_config.yml` require a `docker compose restart`.
 
-### Local machine
+Validate the YAML before committing — a small syntax error silently breaks the build:
 
-* Get the repo into your machine 
-
-```bash
-git clone https://github.com/sharu725/online-cv.git
+```sh
+python3 -c "import yaml; yaml.safe_load(open('_data/data.yml'))"
 ```
 
-* Install required ruby gems
+## PDF
 
-```bash
-bundle install
-```
+Print the page from the browser (`Ctrl+P`). Print styles are in the `@media print`
+block of `assets/css/main.scss`; there is no separate print page.
 
-* Serve the site locally
+## Deployment
 
-```bash
-bundle exec jekyll serve
-```
+GitHub Pages builds from the `master` branch root. No CI workflow, no external
+dependencies — plain Jekyll, no frameworks, no webfonts, no JavaScript.
 
-* Navigate to `http://localhost:4000`
+## History
 
-
-## Skins
-
-There are 6 color schemes available:
-
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
-
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
-
-## Credits
-
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
-
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
-
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
-
+This repository began as a fork of [sharu725/online-cv](https://github.com/sharu725/online-cv)
+(MIT, see `LICENSE.md`). The theme has since been fully replaced; only the
+`_data/data.yml` schema still resembles the original.

@@ -1,18 +1,293 @@
 ---
-
+# Front matter required so Jekyll compiles this SCSS.
 ---
 
-@charset "utf-8";
+// ---------------------------------------------------------------------------
+// Minjae Kim — CV
+// Single-column technical document. No frameworks, no webfonts, no JS.
+// ---------------------------------------------------------------------------
 
+$ink:        #16181d;   // body text
+$ink-strong: #000;      // name, headings
+$muted:      #6b7280;   // dates, secondary
+$rule:       #e3e5e9;   // hairlines
+$link:       #1a4f8a;
+$page:       #fff;
 
-// define variable with front matter
-{% if site.data.data.sidebar.position == 'left' %}
-$resume-order: 2;
-$sidebar-order: 1;
-{% else %}
-$resume-order: 1;
-$sidebar-order: 2;
-{% endif %}
+$measure:    47rem;     // content width — ~90 chars at base size
+$gutter:     2rem;
 
-@import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
-@import "default"; // main partials
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: $page;
+  color: $ink;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+               "Noto Sans KR", Arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.62;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(26, 79, 138, 0.28);
+  &:hover { border-bottom-color: $link; }
+}
+
+.cv {
+  max-width: $measure;
+  margin: 0 auto;
+  padding: 4.5rem $gutter 6rem;
+}
+
+// --- masthead --------------------------------------------------------------
+
+.masthead {
+  text-align: center;
+  padding-bottom: 1.75rem;
+  border-bottom: 2px solid $ink-strong;
+  margin-bottom: 2.5rem;
+
+  h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: 0.055em;
+    color: $ink-strong;
+  }
+}
+
+.tagline {
+  margin: 0.35rem 0 0;
+  font-size: 1rem;
+  color: $muted;
+  letter-spacing: 0.02em;
+}
+
+.contacts {
+  margin: 0.9rem 0 0;
+  font-size: 0.85rem;
+  color: $muted;
+
+  a {
+    color: $muted;
+    border-bottom-color: transparent;
+    &:hover { color: $link; border-bottom-color: rgba(26, 79, 138, 0.28); }
+  }
+
+  // Separator between contact items.
+  a + a::before {
+    content: "·";
+    color: $rule;
+    margin: 0 0.6rem;
+  }
+}
+
+// --- sections --------------------------------------------------------------
+
+section { margin-bottom: 2.4rem; }
+
+h2 {
+  margin: 0 0 1.1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid $rule;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $ink-strong;
+}
+
+// --- entries (experience / education) --------------------------------------
+
+.entry {
+  margin-bottom: 1.5rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $ink-strong;
+  }
+}
+
+.when {
+  flex: none;
+  font-size: 0.82rem;
+  color: $muted;
+  white-space: nowrap;
+}
+
+.where {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+  color: $muted;
+}
+
+// --- prose (markdownified details / summary) -------------------------------
+
+.prose {
+  margin-top: 0.5rem;
+
+  p { margin: 0 0 0.7rem; &:last-child { margin-bottom: 0; } }
+
+  ul {
+    margin: 0;
+    padding-left: 1.05rem;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 0.32rem;
+    &:last-child { margin-bottom: 0; }
+
+    &::before {
+      content: "–";
+      position: absolute;
+      left: -1.05rem;
+      color: $muted;
+    }
+  }
+}
+
+// --- publications ----------------------------------------------------------
+
+.papers {
+  margin: 0;
+  padding-left: 1.5rem;
+
+  li {
+    margin-bottom: 0.85rem;
+    padding-left: 0.2rem;
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.paper-title  { display: block; font-weight: 600; color: $ink-strong; }
+.paper-authors,
+.paper-venue  { display: block; font-size: 0.86rem; color: $muted; }
+
+// --- compact key/value lists (awards, languages, interests) ----------------
+
+.compact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.22rem 0;
+  }
+}
+
+// --- skills ----------------------------------------------------------------
+
+.skills {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: 1fr 6rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.26rem 0;
+  }
+}
+
+.skill-name { font-size: 0.9rem; }
+
+.meter {
+  height: 3px;
+  background: $rule;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.meter-fill {
+  display: block;
+  height: 100%;
+  background: $muted;
+}
+
+// --- two-up (languages + interests) ----------------------------------------
+
+.twoup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+// --- narrow screens --------------------------------------------------------
+
+@media (max-width: 44rem) {
+  .cv { padding: 2.5rem 1.25rem 4rem; }
+
+  .masthead h1 { font-size: 1.7rem; }
+
+  .contacts a {
+    display: block;
+    &::before { content: none !important; margin: 0; }
+  }
+
+  .entry-head { display: block; }
+  .entry-head .when { display: block; margin-top: 0.1rem; }
+
+  .twoup { grid-template-columns: 1fr; gap: 1.75rem; }
+}
+
+// --- print -----------------------------------------------------------------
+
+@media print {
+  @page { margin: 15mm 14mm; }
+
+  html { font-size: 13px; }
+
+  body { color: #000; }
+
+  .cv { max-width: none; padding: 0; }
+
+  a {
+    color: #000;
+    border-bottom: none;
+  }
+
+  .contacts a { color: #000; }
+
+  // Keep an entry from splitting across pages.
+  .entry,
+  .papers li { break-inside: avoid; }
+
+  h2 { break-after: avoid; }
+
+  section { margin-bottom: 1.5rem; }
+
+  // Browsers drop backgrounds when printing; force the meter to stay visible.
+  .meter,
+  .meter-fill {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
