@@ -103,9 +103,9 @@ experiences:
     company: BAUM Design Systems, Korea
     details: |
       - Developed core components of the power model generation flow.
-      - Replaced a commercial SystemVerilog frontend with an open-source based parsing layer, enabling license-clean builds without stub code.
-      - Implemented an RTL-to-gate elaborator to supply gate synthesis functionality absent from the open-source frontend.
-      - Implemented a native Liberty parser (lexer / parser / AST), validated by parity comparison against the legacy backend over an expanded test corpus.
+      - Built the in-house SystemVerilog parsing layer.
+      - Implemented an RTL-to-gate elaborator feeding the gate-level analysis flow.
+      - Implemented a native Liberty parser, validated over an expanded test corpus.
       - Led development of a sequential equivalence checker built on the ABC proof engine, certifying clock-gating insertion, retiming, and register merging as behavior-preserving.
       - Built and owned the multi-OS packaging and release pipeline (RHEL / AlmaLinux / CentOS) and the regression, nightly, and code-quality CI infrastructure.
       - Developed an MCP server exposing the toolchain to LLM agents, with an evaluation harness for regression tracking.
