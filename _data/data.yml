@@ -102,7 +102,7 @@ experiences:
     time: Feb.2024 - July.2026
     company: BAUM Design Systems, Korea
     details: |
-      - Developed core components of the power model generation flow.
+      - Contributed algorithmic post-processing to the power model generation flow.
       - Replaced a commercial SystemVerilog frontend with an open-source based parsing layer, enabling license-clean builds without stub code.
       - Implemented an RTL-to-gate elaborator to supply gate synthesis functionality absent from the open-source frontend.
       - Implemented a native Liberty parser (lexer / parser / AST), validated by parity comparison against the legacy backend over an expanded test corpus.
